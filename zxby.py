@@ -1,6 +1,5 @@
 #zxby.py 
 # -*- coding: utf-8 -*- 
-# __author__="ZJL" 
 import os, sys, subprocess, tempfile, time  
 # 创建临时文件夹,返回临时文件夹路径 
 TempFile = tempfile.mkdtemp(suffix='_test', prefix='python_') 

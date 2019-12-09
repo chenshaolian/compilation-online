@@ -1,6 +1,5 @@
 #flaskrun.py 
 # -*- coding: utf-8 -*- 
-# __author__="ZJL"  
 from flask import Flask 
 from flask import request 
 from flask import Response 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn Python</title>
+  <link rel="stylesheet" href={{url_for('static', filename='css/reset.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='css/index.css')}} rel="external nofollow">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo"><span onclick="toIndex()" id="logo">learnpython</span></div>
+
+    <div class="nav">
+      <div class="nav-content"><span onclick="toIndex()" id="project">Python</span></div>
+    </div>
+
+    <div class="introduce">
+      <p>Get started learning Python with DataCamp's free Intro to Python tutorial. Learn Data Science by completing
+        interactive coding challenges and watching videos by expert instructors. Start Now!</p>
+      <p>This site is generously supported by DataCamp. DataCamp offers online interactive Python Tutorials for Data
+        Science. Join 575,000 other learners and get started learning Python for data science today!</p>
+    </div>
+
+    <div class="welcome">
+      <h1>Welcome</h1>
+      <p>Welcome to the LearnPython.org interactive Python tutorial.</p>
+      <p>Whether you are an experienced programmer or not, this website is intended for everyone who wishes to learn the
+        Python programming language.</p>
+      <p>You are welcome to join our group on Facebook for questions, discussions and updates.</p>
+      <p>Just click on the chapter you wish to begin from, and follow the instructions. Good luck!</p>
+    </div>
+    <div class="learn-the-basics">
+      <h1>Learn the Basics</h1>
+      <ul>
+        <li><span id="pageOne" onclick="pageOne()">Hello, World!</span></li>
+        <li><span id="pageTwo" onclick="pageTwo()">Variables and Types</span></li>
+        <li><span id="pageThree" onclick="pageThree()">Lists</span></li>
+      </ul>
+    </div>
+  </div>
+  <script src={{url_for('static', filename='js/index.js')}}></script>
+</body>
+
+</html>

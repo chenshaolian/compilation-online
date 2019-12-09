@@ -1,0 +1,52 @@
+.container {
+  width: 920px;
+  height: 300px;
+  border: 1px solid #d5eaef;
+}
+.main {
+  height: 255px;
+}
+.lt {
+  width: 50%;
+  float: left;
+  height: 255px;
+  border-right: 5px solid #ebf4f7;
+}
+.rt {
+  width: 50%;
+  float: right;
+  height: 255px;
+}
+.lt p, .rt p {
+  margin: 0;
+  height: 30px;
+  line-height: 30px;
+  background: #ebf4f7;
+}
+.lt p span, .rt p span {
+  width: 80px;
+  height: 30px;
+  background: #fff;
+  text-align: center;
+  display: inline-block;
+}
+#outputContainer {
+  margin: 0;
+  height: 225px;
+  overflow: auto;
+}
+.run {
+  width: 100%;
+  height: 45px;
+  padding: 4px;
+  border-top: 5px solid #ebf4f7;
+}
+.run button {
+  width: 80px;
+  height: 30px;
+  border: none;
+  color: #6d561e;
+  font-weight: bold;
+  border-radius: 5px;
+  background: #fdc551;
+}

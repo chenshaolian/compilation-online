@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn Python</title>
+  <link rel="stylesheet" href={{url_for('static', filename='lib/codemirror.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='fold/foldgutter.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='addon/hint/show-hint.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='addon/lint/lint.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='css/reset.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='css/variablesAndTypes.css')}} rel="external nofollow">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo"><span onclick="toIndex()" id="logo">learnpython</span></div>
+
+    <div class="nav">
+      <div class="nav-content"><span onclick="toIndex()" id="project">Python</span></div>
+    </div>
+
+    <div class="demo-title">
+      <span>Welcome </span> / <b> Variables and Types</b>
+    </div>
+
+    <div class="introduce">
+      <p>Get started learning Python with DataCamp's free Intro to Python tutorial. Learn Data Science by completing
+        interactive coding challenges and watching videos by expert instructors. Start Now!</p>
+    </div>
+
+    <div class="demo">
+      <h1>Variables and Types</h1>
+      <hr>
+      <p>Python is completely object oriented, and not "statically typed". You do not need to declare variables before
+        using them, or declare their type. Every variable in Python is an object.</p>
+      <p>This tutorial will go over a few basic types of variables.</p>
+    </div>
+
+    <div class="numbers">
+      <h1>Numbers</h1>
+      <p>Python supports two types of numbers - integers and floating point numbers. (It also supports complex numbers,
+        which will not be explained in this tutorial).</p>
+      <p>To define an integer, use the following syntax:</p>
+      <div class="content box1">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="numbers" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="numbersContainer" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="numbersRun">Run</button>
+        </div>
+      </div>
+
+      <p>To define a floating point number, you may use one of the following notations:</p>
+      <div class="content">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="numbers2" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="numbersContainer2" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="numbersRun2">Run</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="strings">
+      <h1>Strings</h1>
+      <p>Strings are defined either with a single quote or a double quotes.</p>
+      <div class="content">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="strings" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="stringsContainer" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="stringsRun">Run</button>
+        </div>
+      </div>
+
+      <p>To define a floating point number, you may use one of the following notations:</p>
+      <div class="content box1">
+        <div class="main">
+          <div class="lt" id="exerciselt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="strings2" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="stringsContainer2" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="stringsRun2">Run</button>
+        </div>
+      </div>
+
+      <p>There are additional variations on defining strings that make it easier to include things such as carriage
+        returns, backslashes and Unicode characters. These are beyond the scope of this tutorial, but are covered in the
+        Python documentation.</p>
+      <p>Simple operators can be executed on numbers and strings:</p>
+      <div class="content">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="strings3" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="stringsContainer3" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="stringsRun3">Run</button>
+        </div>
+      </div>
+
+      <p>Assignments can be done on more than one variable "simultaneously" on the same line like this</p>
+      <div class="content box1">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="strings4" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="stringsContainer4" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="stringsRun4">Run</button>
+        </div>
+      </div>
+
+      <p>Mixing operators between numbers and strings is not supported:</p>
+      <div class="content">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="strings5" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="stringsContainer5" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="stringsRun5">Run</button>
+        </div>
+      </div>
+    </div>
+    <div class="exercise">
+      <h1>Exercise</h1>
+      <p>The target of this exercise is to create a string, an integer, and a floating point number. The string should
+        be named mystring and should contain the word "hello". The floating point number should be named myfloat and
+        should contain the number 10.0, and the integer should be named myint and should contain the number 20.</p>
+      <div class="content">
+        <div class="main">
+          <div class="lt">
+            <p>
+              <span id="li1" class="active">script.py</span>
+              <span id="li2" style="visibility:hidden;">solution.py</span>
+            </p>
+            <form action="">
+              <textarea id="exercise" class="editor"></textarea>
+            </form>
+            <div class="tips" id="tip">You did not output the correct things.<span class="close">×</span></div>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="exerciseContainer" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+            <button id="solution" class="solution">solution</button>
+          <button id="exerciseRun">Run</button>
+        </div>
+      </div>
+    </div>
+    <div class="next">
+      <button id="pageOne" onclick="pageOne()" class="left">Previous Tutorial</button>
+      <button id="pageTwo" onclick="pageTwo()">Next tutorial</button>
+    </div>
+  </div>
+  <script src={{url_for('static', filename='lib/codemirror.js')}}></script>
+  <script src={{url_for('static', filename='addon/comment/comment.js')}}></script>
+  <script src={{url_for('static', filename='addon/selection/active-line.js')}}></script>
+  <script src={{url_for('static', filename='keymap/sublime.js')}}></script>
+  <script src={{url_for('static', filename='addon/hint/show-hint.js')}}></script>
+  <script src={{url_for('static', filename='mode/python/python.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/foldcode.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/foldgutter.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/brace-fold.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/indent-fold.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/comment-fold.js')}}></script>
+  <script src={{url_for('static', filename='addon/edit/closebrackets.js')}}></script>
+  <script src={{url_for('static', filename='addon/edit/matchbrackets.js')}}></script>
+  <script src={{url_for('static', filename='js/qs.js')}}></script>
+  <script src={{url_for('static', filename='js/axios.js')}}></script>
+  <script src={{url_for('static', filename='js/variablesAndTypes.js')}}></script>
+</body>
+
+</html>

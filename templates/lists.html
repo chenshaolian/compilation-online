@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn Python</title>
+  <link rel="stylesheet" href={{url_for('static', filename='lib/codemirror.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='fold/foldgutter.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='addon/hint/show-hint.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='addon/lint/lint.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='css/reset.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='css/lists.css')}} rel="external nofollow">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo"><span onclick="toIndex()" id="logo">learnpython</span></div>
+
+    <div class="nav">
+      <div class="nav-content"><span onclick="toIndex()" id="project">Python</span></div>
+    </div>
+
+    <div class="demo-title">
+      <span>Welcome </span> / <b> Lists</b>
+    </div>
+
+    <div class="introduce">
+      <p>Get started learning Python with DataCamp's free Intro to Python tutorial. Learn Data Science by completing
+        interactive coding challenges and watching videos by expert instructors. Start Now!</p>
+    </div>
+
+    <div class="demo">
+      <h1>Lists</h1>
+      <hr>
+      <p>Lists are very similar to arrays. They can contain any type of variable, and they can contain as many variables
+        as you wish. Lists can also be iterated over in a very simple manner. Here is an example of how to build a list.
+      </p>
+      <div class="content">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="editor" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="outputContainer" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="run">Run</button>
+        </div>
+      </div>
+
+      <p>Accessing an index which does not exist generates an exception (an error).</p>
+      <div class="content box1">
+        <div class="main">
+          <div class="lt">
+            <p> <span>script.py</span> </p>
+            <form action="">
+              <textarea id="indentation" class="editor"></textarea>
+            </form>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="indentationContainer" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+          <button id="indentationRun">Run</button>
+        </div>
+      </div>
+    </div>
+    <div class="exercise">
+      <h1>Exercise</h1>
+      <p>In this exercise, you will need to add numbers and strings to the correct lists using the "append" list method.
+        You must add the numbers 1,2, and 3 to the "numbers" list, and the words 'hello' and 'world' to the strings
+        variable.</p>
+      <p>You will also have to fill in the variable second_name with the second name in the names list, using the
+        brackets operator []. Note that the index is zero-based, so if you want to access the second item in the list,
+        its index will be 1.</p>
+      <div class="content">
+        <div class="main">
+          <div class="lt" id="exerciselt">
+            <p>
+              <span id="li1" class="active">script.py</span>
+              <span id="li2" style="visibility:hidden;">solution.py</span>
+            </p>
+            <form action="">
+              <textarea id="exercise" class="editor"></textarea>
+            </form>
+            <div class="tips" id="tip">You did not output the correct things.<span class="close">×</span></div>
+          </div>
+          <div class="rt">
+            <p> <span>IPython Shell</span> </p>
+            <pre id="exerciseContainer" class="outputContainer"></pre>
+          </div>
+        </div>
+        <div class="run">
+            <button id="solution" class="solution">solution</button>
+          <button id="exerciseRun">Run</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="next">
+      <button id="pageTwo" onclick="pageTwo()">Previous Tutorial</button>
+    </div>
+  </div>
+  <script src={{url_for('static', filename='lib/codemirror.js')}}></script>
+  <script src={{url_for('static', filename='addon/comment/comment.js')}}></script>
+  <script src={{url_for('static', filename='addon/selection/active-line.js')}}></script>
+  <script src={{url_for('static', filename='keymap/sublime.js')}}></script>
+  <script src={{url_for('static', filename='addon/hint/show-hint.js')}}></script>
+  <script src={{url_for('static', filename='mode/python/python.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/foldcode.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/foldgutter.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/brace-fold.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/indent-fold.js')}}></script>
+  <script src={{url_for('static', filename='addon/fold/comment-fold.js')}}></script>
+  <script src={{url_for('static', filename='addon/edit/closebrackets.js')}}></script>
+  <script src={{url_for('static', filename='addon/edit/matchbrackets.js')}}></script>
+  <script src={{url_for('static', filename='js/qs.js')}}></script>
+  <script src={{url_for('static', filename='js/axios.js')}}></script>
+  <script src={{url_for('static', filename='js/lists.js')}}></script>
+</body>
+
+</html>

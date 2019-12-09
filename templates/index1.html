@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Learn Python</title>
+  <link rel="stylesheet" href={{url_for('static', filename='lib/codemirror.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='fold/foldgutter.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='addon/hint/show-hint.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='addon/lint/lint.css')}} rel="external nofollow">
+  <link rel="stylesheet" href={{url_for('static', filename='css/index.css')}} rel="external nofollow">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="lt">
+        <p> <span>input</span> </p>
+        <form action="">
+          <textarea id="editor" class="editor"></textarea>
+        </form>
+      </div>
+      <div class="rt">
+        <p> <span>output</span> </p>
+        <pre id="outputContainer"></pre>
+      </div>
+    </div>
+
+    <div class="run">
+      <button id="test">Run</button>
+    </div>
+
+    <p id="pageOne" onclick="pageOne()">Hello, World</p>
+  </div>
+</body>
+
+</html>
+<script src={{url_for('static', filename='lib/codemirror.js')}}></script>
+<script src={{url_for('static', filename='addon/comment/comment.js')}}></script>
+<script src={{url_for('static', filename='addon/selection/active-line.js')}}></script>
+<script src={{url_for('static', filename='keymap/sublime.js')}}></script>
+<script src={{url_for('static', filename='addon/hint/show-hint.js')}}></script>
+<script src={{url_for('static', filename='mode/python/python.js')}}></script>
+<script src={{url_for('static', filename='addon/fold/foldcode.js')}}></script>
+<script src={{url_for('static', filename='addon/fold/foldgutter.js')}}></script>
+<script src={{url_for('static', filename='addon/fold/brace-fold.js')}}></script>
+<script src={{url_for('static', filename='addon/fold/indent-fold.js')}}></script>
+<script src={{url_for('static', filename='addon/fold/comment-fold.js')}}></script>
+<script src={{url_for('static', filename='addon/edit/closebrackets.js')}}></script>
+<script src={{url_for('static', filename='addon/edit/matchbrackets.js')}}></script>
+<script src={{url_for('static', filename='qs.js')}}></script>
+<script src={{url_for('static', filename='axios.js')}}></script>
+<script src={{url_for('static', filename='index.js')}}></script>

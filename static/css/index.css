@@ -1,0 +1,45 @@
+.container {
+  margin: 0 auto;
+  max-width: 960px;
+}
+.logo {
+  height: 70px;
+  line-height: 70px;
+}
+.nav {
+  left: 0;
+  top: 70px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  background: #007bff;
+}
+.nav-content {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 960px;
+} 
+.introduce {
+  padding: 10px 0;
+  margin-top: 40px;
+}
+.introduce p,
+.welcome p, 
+.welcome h1,
+.learn-the-basics h1{
+  margin-bottom: 20px;
+}
+.learn-the-basics ul {
+  padding: 0 40px;
+}
+.learn-the-basics ul li {
+  margin-bottom: 6px;
+}
+.learn-the-basics ul li span {
+  cursor: pointer;
+  color: #007bff;
+}
+.learn-the-basics ul li span:hover {
+  border-bottom: 1px solid #007bff;
+}
